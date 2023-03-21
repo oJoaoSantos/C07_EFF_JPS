@@ -27,5 +27,7 @@ namespace D01_EF6_DF
     
         public virtual DbSet<Region> Region { get; set; }
         public virtual DbSet<Territories> Territories { get; set; }
+        public virtual DbSet<EmployeeTerritories> EmployeeTerritories { get; set; }
+        public virtual DbSet<Employees> Employees { get; set; }
     }
 }
