@@ -53,7 +53,6 @@ namespace D01_EF6_DF
                     Console.WriteLine($"{item.RegionID} - {item.RegionDescription}");
                 }
                 #endregion
-                
                 #region Novo Territory da Region (n)
                 Territories territorie01 = new Territories();
                 Territories territorie02 = new Territories();
@@ -84,6 +83,13 @@ namespace D01_EF6_DF
                 var queryTerritory = db.Territories.Select(t => t).OrderByDescending(t => t.TerritoryID);
 
                 queryTerritory.ToList().ForEach(t => Console.WriteLine($"{t.TerritoryID} - {t.RegionID} - {t.TerritoryDescription}"));
+                #endregion
+
+                #region Novo Employee
+                //ToDo JPS --> Inserir um empregado com os meus dados num dos novos territórios.
+
+                EmployeeTerritories emloyeeTerritory01 = new EmployeeTerritories();
+
                 #endregion
             }
             #endregion
