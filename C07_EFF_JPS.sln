@@ -13,6 +13,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "D02_EF6_CF_v2", "D02_EF6_CF
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "E01_EF6_CF", "E01_EF6_CF\E01_EF6_CF.csproj", "{BFD02E64-C42B-46E9-A612-9BB3760C8A87}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "E01_EF6_CF_BookDB_DAL", "E01_EF6_CF_BookDB_DAL\E01_EF6_CF_BookDB_DAL.csproj", "{B5710E0B-529F-4275-9221-236D7E5892E4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "E01_EF6_CF_BookDB_Client", "E01_EF6_CF_BookDB_Client\E01_EF6_CF_BookDB_Client.csproj", "{92FFBF17-B2F5-485C-B80A-4953A1E4B9FA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +43,14 @@ Global
 		{BFD02E64-C42B-46E9-A612-9BB3760C8A87}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BFD02E64-C42B-46E9-A612-9BB3760C8A87}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BFD02E64-C42B-46E9-A612-9BB3760C8A87}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B5710E0B-529F-4275-9221-236D7E5892E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B5710E0B-529F-4275-9221-236D7E5892E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B5710E0B-529F-4275-9221-236D7E5892E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B5710E0B-529F-4275-9221-236D7E5892E4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{92FFBF17-B2F5-485C-B80A-4953A1E4B9FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92FFBF17-B2F5-485C-B80A-4953A1E4B9FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92FFBF17-B2F5-485C-B80A-4953A1E4B9FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92FFBF17-B2F5-485C-B80A-4953A1E4B9FA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
