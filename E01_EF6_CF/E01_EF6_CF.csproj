@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{B33C0D07-7650-4C0B-8609-8F5F7EDAF1DE}</ProjectGuid>
+    <ProjectGuid>{BFD02E64-C42B-46E9-A612-9BB3760C8A87}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>D02_EF6_CFv2</RootNamespace>
-    <AssemblyName>D02_EF6_CFv2</AssemblyName>
+    <RootNamespace>E01_EF6_CF</RootNamespace>
+    <AssemblyName>E01_EF6_CF</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -34,10 +34,10 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
-      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+      <HintPath>..\packages\EntityFramework.6.0.0\lib\net45\EntityFramework.dll</HintPath>
     </Reference>
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
-      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <HintPath>..\packages\EntityFramework.6.0.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
@@ -50,11 +50,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Model\Blog.cs" />
-    <Compile Include="Model\BlogContext.cs" />
-    <Compile Include="Repository\BlogRepository.cs" />
-    <Compile Include="Model\Post.cs" />
-    <Compile Include="Repository\PostRepository.cs" />
+    <Compile Include="Model\Book.cs" />
+    <Compile Include="Model\BookRepository.cs" />
+    <Compile Include="Model\DBContext.cs" />
+    <Compile Include="Model\Publisher.cs" />
+    <Compile Include="Model\PublisherRepository.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

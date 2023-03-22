@@ -1,4 +1,8 @@
-﻿using D00_Utility;
+﻿// SQL DML: Data manipulation Language --> SELECT, INSERT, UPDATE, DELETE
+
+// CRUD Operations --> CREATE, READ, UPDATE, DELETE
+
+using D00_Utility;
 using D02_EF6_CF_v2.Model;
 using System;
 using System.Collections.Generic;
@@ -6,7 +10,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace D02_EF6_CFv2
+namespace D02_EF6_CF_v2
 {
     internal class Program
     {
@@ -19,11 +23,11 @@ namespace D02_EF6_CFv2
                 #region Blog
                 Blog blog01 = new Blog();
 
-                blog01.CreateBlog(blog01, "Blog Test 02");
+                blog01.CreateBlog(blog01, "Blog Test 03");
                 db.Blog.Add(blog01);
                 db.SaveChanges();
 
-                blog01.ListBlog();
+                blog01.ReadBlog();
                 #endregion
 
                 #region Posts
@@ -31,9 +35,9 @@ namespace D02_EF6_CFv2
                 Post post02 = new Post();
                 Post post03 = new Post();
 
-                post01.CreatePost(post01, 2, "Post 04", "Post 04 Content ... ... ... ");
-                post02.CreatePost(post02, 2, "Post 05", "Post 05 Content ... ... ... ");
-                post03.CreatePost(post03, 2, "Post 06", "Post 06 Content ... ... ... ");
+                post01.CreatePost(post01, 3, "Post 07", "Post 07 Content ... ... ... ");
+                post02.CreatePost(post02, 3, "Post 08", "Post 08 Content ... ... ... ");
+                post03.CreatePost(post03, 3, "Post 09", "Post 09 Content ... ... ... ");
 
                 db.Post.Add(post01);
                 db.Post.Add(post02);
@@ -41,7 +45,7 @@ namespace D02_EF6_CFv2
 
                 db.SaveChanges();
 
-                post03.ListPost();
+                post03.ReadPost();
                 #endregion
             }
 

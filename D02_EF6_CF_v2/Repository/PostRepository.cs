@@ -18,12 +18,12 @@ namespace D02_EF6_CF_v2.Model
             post.Content = content;
         }
 
-        public void ListPost()
+        public void ReadPost()
         {
+            Utility.BlockSeparator(2);
+            Utility.WriteTitle("Posts");
             using (var db = new BlogContext())
             {
-                Utility.BlockSeparator(2);
-                Utility.WriteTitle("Posts");
                 var queryPost = db.Post.Select(p => p).OrderBy(p => p.Title);
                 queryPost.ToList().ForEach(p => Console.WriteLine($"ID: {p.PostId}\tBlog ID: {p.BlogId}\tTitle: {p.Title}\tContent: {p.Content}"));
             }

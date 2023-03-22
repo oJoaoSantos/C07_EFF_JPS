@@ -14,11 +14,11 @@ namespace D02_EF6_CF_v2.Model
             blog.Name = name;            
         }
 
-        public void ListBlog()
+        public void ReadBlog()
         {
+            Utility.WriteTitle("Blogs");
             using (var db = new BlogContext())
             {
-                Utility.WriteTitle("Blogs");
                 var queryBlog = db.Blog.Select(b => b).OrderBy(b => b.Name);
                 queryBlog.ToList().ForEach(b => Console.WriteLine($"ID: {b.BlogId}\tName: {b.Name}"));
             }

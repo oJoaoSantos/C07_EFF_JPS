@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("D02_EF6_CFv2")]
+[assembly: AssemblyTitle("E01_EF6_CF")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("D02_EF6_CFv2")]
+[assembly: AssemblyProduct("E01_EF6_CF")]
 [assembly: AssemblyCopyright("Copyright ©  2023")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("b33c0d07-7650-4c0b-8609-8f5f7edaf1de")]
+[assembly: Guid("bfd02e64-c42b-46e9-a612-9bb3760c8a87")]
 
 // Version information for an assembly consists of the following four values:
 //

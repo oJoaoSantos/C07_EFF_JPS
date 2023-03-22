@@ -1,22 +1,22 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Data.Entity;
-using System.Data.Entity.ModelConfiguration.Conventions;
+using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Data.Entity.ModelConfiguration.Conventions;
 
-namespace D02_EF6_CF_v2.Model
+namespace E01_EF6_CF.Model
 {
-    internal class BlogContext : DbContext
+    internal class DBContext : DbContext
     {
         #region Construtor (connectionstring do App.Config)
-        public BlogContext() : base("name=BlogEntities")
+        public DBContext() : base("name=BookEntities")
         {
         }
         #endregion
 
-        #region Vriação da BD
+        #region Variação da BD
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             // Desativar a pluralização das tabelas
@@ -25,8 +25,8 @@ namespace D02_EF6_CF_v2.Model
         #endregion
 
         #region Tabelas em Memória (dbsets)
-        public DbSet<Blog> Blog { get; set; }
-        public DbSet<Post> Post { get; set; } 
+        public DbSet<Book> Book { get; set; }
+        public DbSet<Publisher> Publisher { get; set; }
         #endregion
     }
 }
