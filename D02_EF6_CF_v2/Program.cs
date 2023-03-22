@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace D02_EF6_CFv2
+namespace D02_EF6_CF_v2
 {
     internal class Program
     {

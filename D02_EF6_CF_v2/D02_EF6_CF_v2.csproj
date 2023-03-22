@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{B33C0D07-7650-4C0B-8609-8F5F7EDAF1DE}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>D02_EF6_CFv2</RootNamespace>
-    <AssemblyName>D02_EF6_CFv2</AssemblyName>
+    <RootNamespace>D02_EF6_CF_v2</RootNamespace>
+    <AssemblyName>D02_EF6_CF_v2</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
