@@ -20,7 +20,7 @@ namespace E01_EF6_CF.Model
             using (var db = new DBContext())
             {
                 var queryBlog = db.Publisher.Select(p => p).OrderBy(p => p.Name);
-                queryBlog.ToList().ForEach(p => Console.WriteLine($"ID: {p.PublisherId}\t|\tName: {p.Name}"));
+                queryBlog.ToList().ForEach(p => Console.WriteLine($"ID: {p.PublisherId}   |   Name: {p.Name}"));
             }
         }
     }

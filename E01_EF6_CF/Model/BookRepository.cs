@@ -23,7 +23,7 @@ namespace E01_EF6_CF.Model
             using (var db = new DBContext())
             {
                 var queryBlog = db.Book.Select(b => b).OrderBy(b => b.Title);
-                queryBlog.ToList().ForEach(b => Console.WriteLine($"ID: {b.PublisherId}\t|\tISBN: {b.ISBN.ToUpper()}\t|\tTitle: {b.Title}\t|\tDate: {b.Date.ToShortDateString()}"));
+                queryBlog.ToList().ForEach(b => Console.WriteLine($"Book ID: {b.BookId}   |   Publisher ID: {b.PublisherId}   |   ISBN: {b.ISBN.ToUpper()}   |   Title: {b.Title}   |   Date: {b.Date.ToShortDateString()}"));
             }
         }
     }
