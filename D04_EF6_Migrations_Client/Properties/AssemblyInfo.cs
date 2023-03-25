@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("E01_EF6_CF_BookDB_Client")]
+[assembly: AssemblyTitle("D04_EF6_Migrations_Client")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("E01_EF6_CF_BookDB_Client")]
+[assembly: AssemblyProduct("D04_EF6_Migrations_Client")]
 [assembly: AssemblyCopyright("Copyright ©  2023")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("92ffbf17-b2f5-485c-b80a-4953a1e4b9fa")]
+[assembly: Guid("caec3ac7-b37b-4a03-8f55-a3d402a55365")]
 
 // Version information for an assembly consists of the following four values:
 //
