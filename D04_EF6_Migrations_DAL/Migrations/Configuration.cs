@@ -24,17 +24,20 @@
                 {
                     DDCCode = "000",
                     DDCClassification = "Computer science, information and general works"
-                },
-                new DaweyDecimalClassification
-                {
-                    DDCCode = "100",
-                    DDCClassification = "Philosophy and psychology"
-                },
-                new DaweyDecimalClassification
-                {
-                    DDCCode = "200",
-                    DDCClassification = "Religion"
                 });
+
+            context.DaweyDecimalClassification.AddOrUpdate(i => i.DaweyDecimalClassificationID,
+               new DaweyDecimalClassification
+               {
+                   DDCCode = "100",
+                   DDCClassification = "Philosophy and psychology"
+               });
+            context.DaweyDecimalClassification.AddOrUpdate(i => i.DaweyDecimalClassificationID,
+              new DaweyDecimalClassification
+              {
+                  DDCCode = "200",
+                  DDCClassification = "Religion"
+              });
         }
     }
 }

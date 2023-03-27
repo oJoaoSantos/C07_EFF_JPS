@@ -6,8 +6,6 @@ namespace D04_EF6_Migrations_DAL
 
     public class BookDBContext : DbContext
     {
-
-        // O nome da connectionstring a ser usada neste contexto
         public BookDBContext() : base("BooksDB_D04")
         {
         }
@@ -17,10 +15,9 @@ namespace D04_EF6_Migrations_DAL
             modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
         }
 
+        public DbSet<DaweyDecimalClassification> DaweyDecimalClassification { get; set; }
         public DbSet<Publisher> Publisher { get; set; }
         public DbSet<Book> Book { get; set; }
-        public DbSet<DaweyDecimalClassification> DaweyDecimalClassification { get; set; }
-
     }
 
 }

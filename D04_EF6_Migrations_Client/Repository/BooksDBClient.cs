@@ -5,20 +5,7 @@ namespace D04_EF6_Migrations_Client
 
     static class BooksDBClient
     {
-        //public static void CreateDDC()
-        //{
-
-        //    DaweyDecimalClassification ddc = new DaweyDecimalClassification();
-        //    {
-        //    };
-
-        //    using (var context = new BookDBContext())
-        //    {
-        //        context.DaweyDecimalClassification.Add(ddc);
-        //        context.SaveChanges();
-        //    }
-
-        //}
+        #region Create
         public static void CreatePublisher()
         {
 
@@ -53,6 +40,20 @@ namespace D04_EF6_Migrations_Client
             }
 
         }
+        #endregion
+
+        #region Read
+
+        #endregion
+
+        #region Update
+
+        #endregion
+
+        #region Delete
+
+        #endregion
+
 
     }
 
