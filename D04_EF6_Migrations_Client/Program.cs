@@ -10,6 +10,7 @@ namespace D04_EF6_Migrations_Client
     {
         static void Main(string[] args)
         {
+            BooksDBClient.CreateDDC();
             BooksDBClient.CreatePublisher();
             BooksDBClient.CreateBook();
 

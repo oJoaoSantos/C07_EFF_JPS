@@ -6,6 +6,22 @@ namespace D04_EF6_Migrations_Client
     static class BooksDBClient
     {
         #region Create
+        public static void CreateDDC()
+        {
+
+            DaweyDecimalClassification ddc = new DaweyDecimalClassification
+            {
+                DDCCode = "000",
+                DDCClassification = "Computer science, information and general works"
+            };
+
+            using (var context = new BookDBContext())
+            {
+                context.DaweyDecimalClassification.Add(ddc);
+                context.SaveChanges();
+            }
+
+        }
         public static void CreatePublisher()
         {
 
